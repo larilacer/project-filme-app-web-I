@@ -1,0 +1,47 @@
+<div class="container">
+  <h1>Lista de Filmes</h1>
+  <div *ngIf="mensagem" class="mensagem">{{ mensagem }}</div>
+  <ul>
+    <li *ngFor="let filme of filmes" class="filme-item">
+      <span>{{ filme.nome }} - {{ filme.genero }} - {{ filme.ano }}</span>
+      <button *ngIf="filme.id" (click)="deletarFilme(filme.id)">Deletar</button>
+      <button (click)="selecionarFilme(filme)">Editar</button>
+    </li>
+  </ul>
+
+  <h2>Adicionar Novo Filme</h2>
+  <form (ngSubmit)="adicionarFilme()" class="filme-form">
+    <label>
+      Nome:
+      <input [(ngModel)]="novoFilme.nome" name="nome" required>
+    </label>
+    <label>
+      Gênero:
+      <input [(ngModel)]="novoFilme.genero" name="genero" required>
+    </label>
+    <label>
+      Ano:
+      <input [(ngModel)]="novoFilme.ano" name="ano" required>
+    </label>
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <div *ngIf="filmeParaEditar">
+    <h2>Editar Filme</h2>
+    <form (ngSubmit)="atualizarFilme()" class="filme-form">
+      <label>
+        Nome:
+        <input [(ngModel)]="filmeParaEditar.nome" name="editNome" required>
+      </label>
+      <label>
+        Gênero:
+        <input [(ngModel)]="filmeParaEditar.genero" name="editGenero" required>
+      </label>
+      <label>
+        Ano:
+        <input [(ngModel)]="filmeParaEditar.ano" name="editAno" required>
+      </label>
+      <button type="submit">Atualizar</button>
+    </form>
+  </div>
+</div>

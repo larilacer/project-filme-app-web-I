@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+  body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura mínima da tela */
+    background-color: #f0f2f5; /* Cor de fundo suave */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    max-width: 800px; 
+    width: 100%;
+    margin: 20px auto; 
+    top: 50%;
+    right: 50%;
+    padding: 40px;
+    right: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Para organizar os elementos verticalmente */
+    align-items: center; /* Centraliza os itens dentro do container */
+  }
+  
+  
+
+h1, h2 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filme-item {
+   display: flex;
+   justify-content: space-between; /* Mantém a lista organizada */
+   width: 100%; /* Para ocupar a largura total do container */
+  justify-content: space-between;
+  background-color: #e0f7fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+input:focus, button:focus {
+    outline: none;
+    border: 1px solid #007BFF; /* Cor ao focar */
+}
+
+input[type="text"]:focus {
+  border-color: #80cbc4;
+  outline: none;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:focus {
+  outline: none;
+}
+
+.mensagem {
+  color: green;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filme-form {
+  margin-bottom: 20px;
+}
+
+.filme-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #00796b;
+}
+
+.filme-form input[type="text"] {
+  width: calc(100% - 20px);
+}
+

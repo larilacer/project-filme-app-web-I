@@ -1,0 +1,79 @@
+/* src/app/app.component.css */
+
+/* Estilização para o título */
+h1 {
+    color: #3498db;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo da lista de filmes */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .filme-item {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filme-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Estilo do formulário de adicionar e editar filme */
+  .filme-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .filme-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .filme-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .filme-form button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filme-form button:hover {
+    background-color: #27ae60;
+  }
+  

@@ -1,0 +1,18 @@
+{
+  "filmes": [
+    {
+      "id": "1",
+      "nome": "Matrix",
+      "genero": "Ficção Científica",
+      "ano": 1999,
+      "avaliacao": 5
+    },
+    {
+      "id": "2",
+      "nome": "O Poderoso Chefão",
+      "genero": "Drama",
+      "ano": 1972,
+      "avaliacao": 5
+    }
+  ]
+}
